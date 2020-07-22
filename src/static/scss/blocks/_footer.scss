@@ -1,0 +1,41 @@
+.footer {
+  &__inner {
+    display       : flex;
+    flex-direction: column;
+    padding       : 24px 0 46px;
+    border-top: 2px solid rgba($color: #05263F, $alpha: .12);
+    @include min-tablet {
+      flex-direction : row;
+      justify-content: space-between;
+      padding        : 40px 0 50px;
+    }
+  }
+
+  &__copy {
+    order      : 1;
+    font-size  : 15px;
+    line-height: 24px;
+    color      : #05263F;
+
+    @include min-tablet {
+      font-size: 16px;
+      order    : 0;
+    }
+  }
+
+  &__email {
+    font-size     : 15px;
+    line-height   : 24px;
+    color         : #083F68;
+    padding-bottom: 12px;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+    @include min-tablet {
+      font-size     : 16px;
+      padding-bottom: 0;
+      order         : 1;
+    }
+  }
+}

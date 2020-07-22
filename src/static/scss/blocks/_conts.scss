@@ -1,0 +1,67 @@
+.conts {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+    @include min-tablet {
+      flex-direction: row;
+      padding: 64px 0 40px;
+    }
+  }
+
+  &__title {
+    font-size  : 23px;
+    line-height: 32px;
+    color      : #001E34;
+    padding-bottom: 16px;
+    @include min-tablet {
+      font-size: 25px;
+      max-width: 42.8%;
+      padding-bottom: 0;
+      flex: 1;
+    }
+  }
+
+  &__phones {
+    display       : flex;
+    flex-direction: column;
+    text-align    : left;
+    @include min-tablet {
+     width: 57.2%;
+    }
+    >p {
+      font-size  : 15px;
+      line-height: 24px;
+      color      : #001E34;
+      padding-bottom: 12px;
+      @include min-tablet {
+        font-size: 16px;
+        padding-bottom: 16;
+      }
+    }
+
+  }
+
+  &__number {
+    font-size  : 15px;
+    line-height: 24px;
+    color      : #083F68;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+    @include min-tablet {
+      font-size: 16px;
+    }
+  }
+  &__button{
+    display: none;
+    @include min-tablet{
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 255px;
+    }
+  }
+}

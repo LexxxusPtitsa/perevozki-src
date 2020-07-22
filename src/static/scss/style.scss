@@ -1,0 +1,17 @@
+// import presets
+
+@import "./presets/bp";
+@import "./presets/reset";
+@import "./presets/fonts";
+@import './presets/vars';
+@import './presets/datepicker';
+
+// import - blocks
+@import "./blocks/head";
+@import "./blocks/popups";
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/faq";
+@import "./blocks/app";
+@import "./blocks/conts";
+@import "./blocks/footer";

@@ -1,0 +1,22 @@
+doctype html
+html(lang="ru")
+    head
+        meta(http-equiv="Content-Type" content="text/html;charset=UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title= 'Перевозки ДНР-Украина'
+        
+        link(rel="stylesheet" href="./css/style.css")
+        <link  href="https://github.com/fengyuanchen/datepicker/blob/master/dist/datepicker.min.css" rel="stylesheet">
+    body
+        script.
+            function change(objName, min, max, step) {
+            var obj = document.getElementById(objName);
+            var tmp = +obj.value + step;
+            if (tmp<min) tmp=min;
+            if (tmp>max) tmp=max;
+            obj.value = tmp;
+            }
+        block content
+        script(type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js")
+        <script src="https://raw.githubusercontent.com/fengyuanchen/datepicker/master/dist/datepicker.min.js"></script>
+        script(type='text/javascript' src='./js/script.js')

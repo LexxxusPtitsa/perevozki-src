@@ -1,0 +1,39 @@
+.main 
+    .container
+        .main__inner
+            .main__header
+                h1.main__title Перевозки <br>ДНР — Украина
+                .main__subtitle Лучший способ забронировать билеты онлайн
+            form.main__form.form
+                label(for="from", id="label-from")
+                    input(type="text", name="from", placeholder="Откуда", id="from")
+                    <svg id="swap" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12ZM20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12ZM9 17L5.5 14L9 11V13H13V15H9V17ZM15 7L18.5 10L15 13V11H11V9H15V7Z" fill="#05263F"/>
+                    </svg>
+                input(type="text", name="to", placeholder="Куда")
+                //- input(type="date", name="date", data-placeholder="Дата", required, aria-required="true")
+                label(for="date", id="label-date")
+                    <input name="date" placeholder="Дата" data-toggle="datepicker" id="date">
+                    <div data-toggle="datepicker"></div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 3L21 3C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4L22 20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21L3 21C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20L2 4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3L7 3V1L9 1V3L15 3V1L17 1V3ZM15 5L9 5V7H7V5L4 5L4 9L20 9V5H17V7L15 7L15 5ZM20 11L4 11L4 19L20 19L20 11Z" fill="#05263F"/>
+                    </svg>
+                label(for="people", id="label-people")
+                    .people__buttons
+                        button(type="button", value="-", onClick="change('people',0,10, -1);")
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 11L19 11V13L5 13V11Z" fill="white"/>
+                            </svg>
+                        button(type="button", value="+", onClick="change('people',0,10, 1);")
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 6L6 0L8 0L8 6L14 6V8H8L8 14H6L6 8L0 8L0 6L6 6Z" fill="white"/>
+                            </svg>
+                    input(type="text", name="people", min="1", value="1", placeholder="1 чел.", id="people")
+                    
+                .form__desc После бронирования билета наш оператор свяжется с вами для уточнения подробностей.
+                .form__cost
+                    .form__cost-name Цена:
+                    .form__cost-count 650 грн.
+                button(type="submit").form__button.button Забронировать
+            .main__tip При бронировании поездки в обратную сторону получите скидку 50 грн.
+            
